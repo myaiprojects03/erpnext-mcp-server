@@ -2,9 +2,6 @@
 
 Connects ERPNext to any MCP client (Claude Desktop, MCP Inspector, etc.). Query live ERP data: invoices, stock, customers, sales through natural language.
 
-## Demo
-[Screen recording link]
-
 ## Architecture
 
 ```
