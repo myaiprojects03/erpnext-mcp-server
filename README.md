@@ -3,7 +3,7 @@
 Connects ERPNext to any MCP client (Claude Desktop, MCP Inspector, etc.). Query live ERP data: invoices, stock, customers, sales through natural language.
 
 ## Demo
-[Screen recording link here]
+[Screen recording link]
 
 ## Architecture
 
@@ -45,7 +45,7 @@ Generate API credentials:
 ## 2. MCP Server Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/erpnext-mcp-server.git
+git clone https://github.com/myaiprojects03/erpnext-mcp-server.git
 cd erpnext-mcp-server
 python -m venv venv
 venv\Scripts\activate        # Windows
@@ -96,11 +96,15 @@ Open the URL printed in terminal. Click **Connect** → **Tools** tab to see and
 
 ## Available Tools
 
-`get_outstanding_invoices` Fetch unpaid, partly paid, or overdue sales invoices 
-`create_customer`  Create a new customer record in ERPNext 
-`get_stock_summary`  Current stock levels across warehouses 
-`search_products`  Search the item catalog by name 
-`get_sales_report` Sales summary between two dates 
+`get_outstanding_invoices` -> Fetch unpaid, partly paid, or overdue sales invoices 
+
+`create_customer` -> Create a new customer record in ERPNext 
+
+`get_stock_summary` -> Current stock levels across warehouses 
+
+`search_products` -> Search the item catalog by name 
+
+`get_sales_report` -> Sales summary between two dates 
 
 ## Project Structure
 
@@ -116,7 +120,11 @@ erpnext-mcp-server/
 
 ## Tech Stack
 Python + fastmcp 3.4.2 -> MCP server framework 
+
 ERPNext v16 via Docker -> Self-hosted ERP (frappe_docker) 
+
 httpx -> HTTP client for ERPNext REST API 
+
 python-dotenv -> Environment variable management 
+
 Claude Desktop / MCP Inspector -> MCP client for testing 
